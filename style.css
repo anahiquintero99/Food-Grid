@@ -126,14 +126,16 @@ main {
 
 @media screen and (max-width: 768px) {
   .hero {
-    grid-template-columns: minmax(300px, 500px);
-    justify-content: center;
+    grid-template-columns: 1fr;
+    padding-bottom: 50px;
   }
   .hero-image {
     display: none;
   }
 
   .dishes-grid {
-    grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+    grid-template-rows: repeat(2, minmax(135px, 1fr));
+    gap: 25px;
   }
 }
